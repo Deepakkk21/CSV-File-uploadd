@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 
 
-/** ------------------ MAKING CONNECTION ------------------ **/
 
-// mongoose.connect('mongodb://127.0.0.1:27017/csvUploads');
-const DB = 'mongodb://127.0.0.1:27017';
+// const DB = 'mongodb://127.0.0.1:27017';
+const DB ='mongodb+srv://dk135781:jUkxi6Lb8UHUymE7@cluster2.l4j9ltn.mongodb.net/?retryWrites=true&w=majority'
 
 mongoose.connect(DB).then(()=>{
     console.log('Connection successful!');
